@@ -6,17 +6,13 @@ CHALLENGE 1 - Review
 Write a function named longestString that takes in an array of strings and returns the index position of the longest string.
 ------------------------------------------------------------------------------------------------ */
 
-// const longestString = (arr) => {
-//   let index = 0;
-//   let arrLength = arr[0].length;
-
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i].length > arrLength) {
-//       arrLength = arr[i].length;
-//     }
-//   }
-//   return arr[index];
-// };
+const longestString = (arr) => {
+  let currentLongest = { string: '', longestIdx: -1 };
+  arr.forEach((str, idx) => {
+    str.length > currentLongest.string.length ? currentLongest = { string: str, longestIdx: idx } : '';
+  });
+  return currentLongest.longestIdx;
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -26,7 +22,7 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 ------------------------------------------------------------------------------------------------ */
 
 const firstLetters = (arr) => {
-  // return arr.charAt(0);
+  return arr.map(str => str.charAt(0));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -38,7 +34,7 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 ------------------------------------------------------------------------------------------------ */
 
 const findHappiness = (arr) => {
-  // return arr.map(arr.includes(':)'));
+  return arr.filter(str => str.includes(':)')) ;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -50,7 +46,7 @@ For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
 
 const standardizePhoneNumbers = (arr) => {
-  // Solution code here...
+  return arr.map(( num => `${num.substring(1,4)}${num.substring(6,9)}${num.substring(10)}`));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -62,7 +58,9 @@ For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
-  // Solution code here...
+  // let odd = 1;
+  // return str.includes(`${odd % 2 === 0}`);
+  return str.split('').filter((letter, idx) => idx % 2 !== 0).join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -72,7 +70,7 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
-  // Solution code here...
+  return arr.every(str => str.includes(':)'));
 };
 
 /* ------------------------------------------------------------------------------------------------
