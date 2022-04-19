@@ -2,6 +2,10 @@
 
 ## Language: `Python`
 
+## Table of Contents
+
+- [Class 01: array-reverse](array-reverse.md)
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
@@ -74,7 +78,3 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - **Run every possible test** - `pytest`
 - **Run filtered tests** - `pytest -k some_filter_text`
 - **Run in watch mode** - `ptw` or `pytest-watch`
-
-## Table of Contents
-
-- [Class 01: array-reverse](array-reverse.md)
