@@ -8,7 +8,6 @@
 - [Class 02: array-insert-shift](code_challenges/array-insert-shift/README.md)
 - [Class 03: array_binary_search](code_challenges/array_binary_search/README.md)
 
-
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
