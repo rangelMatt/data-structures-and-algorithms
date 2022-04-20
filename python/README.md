@@ -4,7 +4,10 @@
 
 ## Table of Contents
 
-- [Class 01: array-reverse](array-reverse.md)
+- [Class 01: array-reverse](code_challenges/array-reverse/README.md)
+- [Class 02: array-insert-shift](code_challenges/array-insert-shift/README.md)
+- [Class 03: array_binary_search](code_challenges/array_binary_search/README.md)
+
 
 ### Folder and Challenge Setup
 
